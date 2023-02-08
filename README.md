@@ -8,16 +8,32 @@ Install
 npm install
 ```
 
-### Docker
+## Creating the schema
 
-Start up the docker container
+The walkthrough video must demonstrate how to create the schema from the MySQL shell.
+
+1. Login to mysql
 
 ```sh
-docker compose up -d --remove-orphans -V
+mysql -uroot -p
 ```
 
-Seed the database
+This will prompt for the MySQL password that you need to enter.
 
+2. Create the schema
+
+```sh
+source ./db/schema.sql
 ```
-npm run seed
-```
+
+## Seeding the DB
+
+The walkthrough video must demonstrate how to seed the database from the command line.
+
+`npm run seed`
+
+The walkthrough video must demonstrate how to start the application’s server.
+
+## Starting the server
+
+`npm start`
